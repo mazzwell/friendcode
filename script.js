@@ -1,7 +1,7 @@
 function storeData() {
   const data = document.getElementById('data').value;
 
-  if (data.startsWith("ft")) {
+  if (data.length <= 12 && data.startsWith("ft")) {
     let existingData = localStorage.getItem('storedData');
     existingData = existingData ? JSON.parse(existingData) : [];
 
@@ -9,6 +9,8 @@ function storeData() {
     localStorage.setItem('storedData', JSON.stringify(existingData));
 
     alert('Data stored successfully!');
+  } else if (data.length > 12) {
+    alert('Data length exceeds 12 characters.');
   } else {
     alert('Data must start with "ft" to be stored.');
   }
