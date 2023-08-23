@@ -5,7 +5,7 @@
   <title>Friend Tech Codes</title>
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
-</head>
+ </head>
   <body>
     <div class="menu">
       <ul>
@@ -37,17 +37,16 @@
       <div id="screen_0" class="screen visible">
         <h2>Submit Your Unused Friend Tech Code</h2>
         <div id="inputSection">
-          <label for="data">Data: </label>
-          <input class="Elee"  placeholder="ft-....." type="text" id="data">
-          <br>
-          <button  class="button" onclick="storeData()">Submit</button>
+          <label for="data">Paste here </label>
+    <input class="Elee"  placeholder="ft-....."type="text" id="data">
+    <button class="button" onclick="storeData()">Submit</button>
         </div>
       </div>
 
        <div id="screen_1" class="screen">
         <h2>Latest Codes</h2>
         <div id="outputSection">
-          <ul id="latestDataList"></ul>
+          <ul id="dataList"></ul>
         </div>
       </div>
 
@@ -63,12 +62,10 @@
 
       <p>Follow On <a href="https://twitter.com/morkiexyz">&nbsp;<b>Twitter</b> </a> </p> </div>
     </div>
-<!-- partial -->
+  <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./scriptx.js"></script>
-  <script src="https://gist.githubusercontent.com/mazzwell/d3bc3d2292d04ab774f5db01516d5cee/raw/data-script.js"></script>
-
-
-
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 </body>
 </html>
